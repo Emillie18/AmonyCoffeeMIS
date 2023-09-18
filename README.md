@@ -1,40 +1,17 @@
-# Instructions
+# AmonyCoffeeMIS - Management Information System (MIS) for Coffee Value Chain
 
-Languages used: C#
+## Overview
+This is the Minimum Viable Product (MVP) of the AmonyCoffeeMIS developed by Emata Uganda Limited. It is designed to simplify the management of coffee farmers' data for the Amony Farmers' Cooperative (AFC) in the Kasese region.
 
-Web framework: .NET 7
+## Getting Started
 
-To run this project, do the following:
+### Prerequisites
+- Docker: [Install Docker](https://docs.docker.com/get-docker/)
+- Docker Compose: [Install Docker Compose](https://docs.docker.com/compose/install/)
 
-Download .NET 7 SDK here - https://dotnet.microsoft.com/en-us/download/dotnet/7.0
+### Building and Running the Application
 
-Run the installer and in the terminal run: 
+1. Clone this repository to your local machine:
 
-```dotnet --version```
-
-Output should show the dotnet version installed
-
-
-
-Within VS code terminal, run the following commands:
-
-Build the app:
-
-```dotnet build```
-
-Install certs required for the app to run:
-
-```dotnet dev-certs https --trust```
-
-NB: After running this command, reopen your browser
-
-
-Run the app: 
-
-```dotnet run```
-
-Access the application on this URL: https://localhost:7208/
-
-
-
-
+   ```shell
+   git clone https://github.com/your-username/AmonyCoffeeMIS.git 
