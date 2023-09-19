@@ -7,7 +7,7 @@ on:
 
 jobs:
   build_image: 
-    uses: Emillie18/AmonyCoffeeMIS.github/workflows/docker-image.yml@main
+    uses: Emillie18/AmonyCoffeeMIS/.github/workflows/docker-image.yml@main
   build:
     runs-on: ubuntu-latest
 
