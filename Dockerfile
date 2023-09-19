@@ -1,13 +1,13 @@
 # Use the official .NET SDK as a build image
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build-env
-WORKDIR /src 
+WORKDIR /src
 
 # Copy the .csproj file and restore any dependencies
 COPY *.csproj ./
 RUN dotnet restore
 
 # Copy the remaining source code and build the application
-COPY src . 
+COPY . ./
 
 # Builds the application
 RUN dotnet publish -c Release -o /publish
