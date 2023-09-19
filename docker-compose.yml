@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   web: 
-    image: emillie/AmonyCoffeeMIS
+    image: emillienatalie/AmonyCoffeeMIS:latest
     ports: 
       - "8080:80"
     depends_on:
