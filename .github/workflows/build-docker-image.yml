@@ -36,6 +36,4 @@ jobs:
           docker-compose -f docker-compose.yml build
           docker-compose -f docker-compose.yml push
 
-      - name: Deploy to DigitalOcean
-        run: |
-          ssh -p ${{ secrets.DROPLET_PASSWORD }} root@143.244.160.153 'cd /deploy/ && bash deploy.sh' 
+      
