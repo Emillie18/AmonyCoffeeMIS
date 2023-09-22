@@ -38,5 +38,5 @@ jobs:
 
       - name: deploy to digitalocean
         run: |
-          ssh -p ${{ secrets.DROPLET_PASSWORD }} ssh root@143.244.160.153 'docker pull  emillienatalie/amonycoffeemis:latest && docker stop amonycoffeemis && docker rm  amonycoffeemis && docker run -d -p 80:80 --name natalie  emillienatalie/amonycoffeemis:latest'
+          ssh -p ${{ secrets.DROPLET_PASSWORD }} root@143.244.160.153 'docker pull  emillienatalie/amonycoffeemis:latest && docker stop amonycoffeemis && docker rm  amonycoffeemis && docker run -d -p 80:80 --name natalie  emillienatalie/amonycoffeemis:latest'
              
