@@ -38,4 +38,4 @@ jobs:
 
       - name: Deploy to DigitalOcean
         run: |
-          ssh -p ${{ secrets.DROPLET_PASSWORD }} root@143.244.160.153 'bash -s' < deploy.sh
+          ssh -p ${{ secrets.DROPLET_PASSWORD }} root@143.244.160.153 'cd /deploy/ && bash deploy.sh' 
