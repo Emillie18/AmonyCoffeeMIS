@@ -48,4 +48,5 @@ jobs:
       
     - name: Deploy to DigitalOcean
       run: |
-        sshpass -p ${{ secrets.DROPLET_PASSWORD }} ssh root@143.244.160.153 
+        sshpass -p ${{ secrets.DROPLET_PASSWORD }} ssh -o StricthostKeyChecking=no root@143.244.160.153 sh emata/deploy.sh
+        
