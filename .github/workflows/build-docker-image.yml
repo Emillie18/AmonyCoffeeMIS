@@ -35,3 +35,8 @@ jobs:
         run: |
           docker-compose -f docker-compose.yml build
           docker-compose -f docker-compose.yml push
+
+      - name: deploy to digitalocean
+        run: |
+          ssh -p ${{ secrets.DROPLET_PASSWORD }} ssh root@143.244.160.153 'docker pull  emillienatalie/amonycoffeemis:latest && docker stop amonycoffeemis && docker rm  amonycoffeemis && docker run -d -p 80:80 --name natalie  emillienatalie/amonycoffeemis:latest'
+             
