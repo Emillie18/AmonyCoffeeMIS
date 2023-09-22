@@ -53,10 +53,10 @@ This is the Minimum Viable Product (MVP) of the AmonyCoffeeMIS developed by Emat
 If you would like to contribute to this project, please follow the [Contributing Guidelines](CONTRIBUTING.md).
 
 ## CI/CD Pipeline
-We have set up a continuous integration and continuous deployment (CI/CD) pipeline using GitHub Actions. The pipeline automates the build and deployment process. For more details on the CI/CD workflow, refer to the [workflow file](.github/workflows/ci-cd.yml).
+We have set up a continuous integration and continuous deployment (CI/CD) pipeline using GitHub Actions. The pipeline automates the build and deployment process. For more details on the CI/CD workflow, refer to the [workflow file](.github/workflows/build-docker-image.yml).
 
 ## Deployment
-The containerized application is deployed to [insert-your-deployment-link-here]. You can access the live application [here](insert-your-deployment-link-here).
+The containerized application is deployed to [http://143.244.160.153/]. You can access the live application [here](http://143.244.160.153/).
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -65,5 +65,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Emata Uganda Limited
 - Amony Farmers' Cooperative
 ```
-
-Replace `[insert-your-deployment-link-here]` with the actual link to your deployed application once you have completed the deployment. You can also customize the README further to include additional information about your project and its features.
